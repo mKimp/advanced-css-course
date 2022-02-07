@@ -1,0 +1,12 @@
+/* link is the state of the button that has not been visited. All elements
+<a> or <area> that has an href attribute can use it */
+@mixin button-prop {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+}
