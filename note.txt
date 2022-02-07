@@ -1,0 +1,50 @@
+3 Pillars that Good HTML and CSS need to have:
+
+1/ Responsive design.
+2/ Mantainable and scalable code
+3/ Web performance: make it smaller, so the user download less data.
+    - Use a CSS preprocess.
+    - Less images.
+    - Compress images. 
+    - Less code.
+    - Less HTTP requests.
+
+What happens to CSS when we load up a webpage?
+- Load HTML -> Parse HTML -> Created the DOM (family tree with parenet, sibling,...)
+- When parsed, find the css file -> Parse CSS => (Cascade, and Process CSS Final Value)
+    - Cascade: process of commbing different stylesheerts and resolving conflicts between CSS rules
+    into one same element; IMPORTANT keyword > SPECIFICITY > SOurce Order.
+        + Specificity: Inline styles > IDS > Classes, psedudo-classes, attribute > Elemetns, psedudo-elements
+- With DOM and  CSS Object Model => create the REnder Tree -> Website rendering: the visual formatting model => Final website rendered.
+
+A CSS Rule
+.my-class { <--- selector
+    color: blue; <--- declaration (property: declared value)
+}
+
+HOW UNITS ARE CONVERTED FROM RELATIVE TO ABSOLUTE(PX)?
+- Browsers specify a root font size for each page ( usually 16px);
+- % and relative values (rem, em) are always convereted to pixel;
+- % relative to their parent font size if used to measure font-size
+- % relative to their parent width if used to measure length.
+- em are measued to parent font-size
+- em are measured relative to the current front size if used to measure length.
+- rem relative to root font size
+- vh and vw are % of the viewport's height and width. 
+ 
+
+ Layout Architecture: Think, Build, Architect
+ 1/ Think: Component drive design
+    - Modular building blocks that make up interfaces;
+    - Held together by the layout of the page;
+
+2/Build: BEM: block element modifier.(classname)
+
+3/ Architect: 7/1 folders module.
+
+
+/****** SASS *****/
+
+1/Variable: reusable value;
+2/Nesting: nest selectos inside of one anothefa-rotate-180
+...
