@@ -42,3 +42,28 @@
   transform: scale(1.5);
   opacity: 0.5;
 }
+
+.btn-text{
+  transition: all 0.2s;
+  padding:5px;
+  
+  &:link, &:visited {
+    color: $darkgreen;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid  $darkgreen;
+    font-size: 1.6rem;
+  }
+
+  &:hover{
+    background-color: $darkgreen;
+    color:white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  &:active{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+  }
+}
